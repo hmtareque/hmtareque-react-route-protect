@@ -1,8 +1,13 @@
 import React from 'react';
+import { Route } from 'react-router-dom';
 
-const ProtectedRoute = () => {
+const ProtectedRoute = ({ component: Component, ...rest}) => {
     return (
-        <div>ProtectedRoute</div>
+        <Route { ...rest } render={
+            (props) => {
+                return <Component />;
+            }
+        }/>
     );
 }
 
