@@ -4,7 +4,7 @@ import auth from './auth';
 const LandingPage = props => {
     return (
         <div>
-            Landing Page
+            <p>Landing Page</p>
             <button onClick={ () => {
                 auth.login(() => {
                     props.history.push('/protected')

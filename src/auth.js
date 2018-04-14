@@ -12,6 +12,10 @@ class Auth {
         this.authenticated = false;
         cb();
     }
+
+    authenticated() {
+        return this.authenticated;
+    }
 }
 
 export default new Auth();
