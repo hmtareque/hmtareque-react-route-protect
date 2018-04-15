@@ -4,7 +4,7 @@ class Auth {
     }
 
     login(cb) {
-        this.authenticated = true;
+      //  this.authenticated = true;
         cb();
     }
 
@@ -13,7 +13,7 @@ class Auth {
         cb();
     }
 
-    authenticated() {
+    isAuthenticated() {
         return this.authenticated;
     }
 }
